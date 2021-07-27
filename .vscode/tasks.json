@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: g++ build active file",
+            "command": "rosrun",
+            "args": [
+                "ORB_SLAM2",
+                "RGBD",
+                "Vocabulary/ORBvoc.txt",
+                "Examples/RGB-D/TUM1.yaml"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
